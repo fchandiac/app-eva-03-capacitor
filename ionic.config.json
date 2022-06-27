@@ -1,0 +1,7 @@
+{
+  "name": "app-eva-03-capacitor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

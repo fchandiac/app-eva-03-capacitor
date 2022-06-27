@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "app-eva-03-capacitor",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
