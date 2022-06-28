@@ -1,0 +1,8 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "app-eva-03-capacitor",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"launchAutoHide": true,
+	"launchShowDuration": 5000
+}

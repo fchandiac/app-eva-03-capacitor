@@ -7,6 +7,30 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  codigo = ""
+  direccion = ""
+
   constructor() {}
+
+  submit() {
+    let data = {
+      "body":{
+        "codigo": this.codigo,
+        "direccion": this.direccion
+      } 
+    }
+    fetch('https://988w4ndhpj.execute-api.us-east-1.amazonaws.com/dev/envio', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      mode: 'no-cors',
+      headers: {
+         'Content-Type': 'text/plain' 
+        }
+    }).then(res => {
+      alert('datos enviados')
+      this.codigo = ""
+      this.direccion = ""
+    }).catch(err => { console.log(err) })
+  }
 
 }

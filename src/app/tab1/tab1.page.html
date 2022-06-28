@@ -1,17 +1,35 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Productos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Ingrese información del producto</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">id producto</ion-label>
+          <ion-input [(ngModel)]="id"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">nombre</ion-label>
+          <ion-input [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">precio</ion-label>
+          <ion-input type="number" [(ngModel)]="precio"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button (click)="submit()">enviar</ion-button>
+      </ion-col>
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
